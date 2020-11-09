@@ -11,7 +11,11 @@ import matplotlib.pyplot as plt
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath('__file__')), '..', 'obstacle-detection'))
 import models.inception
 
-# Data augmentation
+## Data augmentation
+#
+#  This function was used for data augmentation.
+#  @param image a tf.Tensor, the input images.
+#  @param mask a tf.Tensor, the masks, corresponding to the images.
 def augment(image, mask):
     '''Data augmentation
     
